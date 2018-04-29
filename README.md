@@ -4,19 +4,18 @@ PLock is a simple and efficient cross-process lock, also supports read-write loc
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE)
 [![](https://jitpack.io/v/pqpo/PLock.svg)](https://jitpack.io/#pqpo/PLock)
 
-PLock is an Android library, it makes Android to support cross-process lock,  not only that, 
-it can also be transfer to support Java project. It is easy to use and runs efficiently. 
+PLock is an Android library, it makes Android to support cross-process lock, not only that, it can also be transfer to support Java project.   
+It is easy to use and runs efficiently.   
 PLock can acquire locks in either blocking（lock） or non-blocking（tryLock） mode. In blocking mode, 
 it will block the current thread in the process if the lock you acquire is already hold by another process, 
-that only returns false in non-blocking mode.  
+that only returns false in non-blocking mode.    
 PLock also supports read-write lock cross process，If one process holds a read lock, 
-the other process can also acquire a read lock successfully，and cannot acquire a write lock.   
+the other process can also acquire a read lock successfully，and cannot acquire a write lock.     
 You can also use PLock as a file lock, In fact, it is based on file locks that using 
 ***[fcntl](http://pubs.opengroup.org/onlinepubs/009604599/functions/fcntl.html)***
 
-|Lock held||lock request|
+|Lock held|acquire read lock|acquire write lock|
 |:---:|:---:|:---:|
-||read lock|write lock|
 |no lock|allow|allow|
 |one or more read locks|allow|disallow|
 |one write lock|disallow|disallow|
@@ -40,10 +39,10 @@ dependencies {
 
 ## Usage
 
-- Step 1. Get a default PLock object, and you can also create one by yourself.
-- Step 2. Acquire locks.
-- Step 3. Unlock.
-- Step 4. Release if necessary.
+- Step 1. get a default PLock object, and you can also create one by yourself.
+- Step 2. acquire locks.
+- Step 3. unlock.
+- Step 4. release if necessary.
 
 For example:
 
