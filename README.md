@@ -10,11 +10,12 @@ PLock can acquire locks in either blocking（lock） or non-blocking（tryLock�
 it will block the current thread in the process if the lock you acquire is already hold by another process, 
 that only returns false in non-blocking mode.    
 PLock also supports read-write lock cross process，If one process holds a read lock, 
-the other process can also acquire a read lock successfully，and cannot acquire a write lock.     
+the other process can also acquire a read lock successfully，and cannot acquire a write lock. 
+If one process holds a write lock, the other process cannot acquire any read or write lock.     
 You can also use PLock as a file lock, In fact, it is based on file locks that using 
 ***[fcntl](http://pubs.opengroup.org/onlinepubs/009604599/functions/fcntl.html)***
 
-|Lock held|acquire read lock|acquire write lock|
+||acquire read lock|acquire write lock|
 |:---:|:---:|:---:|
 |no lock|allow|allow|
 |one or more read locks|allow|disallow|
@@ -86,6 +87,16 @@ if(pLock.tryWriteLock()) {
 // pLock.release(); 
 
 ```
+
+## Play with samples, have fun!
+
+You can clone this repository, then run 'debug' build variant and 'second' build variant, 
+after that you can see two applications running on your phone which named PLock-FirstProcess and PLock-SecondProcess. 
+ 
+Or download [PLock-FirstProcess](art/PLock-FirstProcess.apk) and [PLock-SecondProcess](art/PLock-SecondProcess.apk).
+
+![](art/screenshot_plock_first.jpg)
+![](art/screenshot_plock_second.jpg)
 
 ## About Me：
 
