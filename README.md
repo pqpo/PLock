@@ -15,8 +15,8 @@ You can also use PLock as a file lock, In fact, it is based on file locks that u
 ***[fcntl](http://pubs.opengroup.org/onlinepubs/009604599/functions/fcntl.html)***
 
 |Lock held||lock request|
-||read lock|write lock|
 |:---:|:---:|:---:|
+||read lock|write lock|
 |no lock|allow|allow|
 |one or more read locks|allow|disallow|
 |one write lock|disallow|disallow|
@@ -33,7 +33,7 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.pqpo:Log4a:{last-version}'
+    implementation 'com.github.pqpo:PLock:{last-version}'
 }
 
 ```
