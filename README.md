@@ -95,8 +95,10 @@ after that you can see two applications running on your phone which named PLock-
  
 Or download [PLock-FirstProcess](art/PLock-FirstProcess.apk) and [PLock-SecondProcess](art/PLock-SecondProcess.apk).
 
-![](art/screenshot_plock_first.jpg)
-![](art/screenshot_plock_second.jpg)
+
+|PLock-first-process|PLock-second-process|
+|:---:|:---:|
+|![](art/screenshot_plock_first.jpg)|![](art/screenshot_plock_second.jpg)|
 
 ## About Me：
 
