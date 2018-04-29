@@ -157,6 +157,7 @@ public class PLock {
     private native boolean unlockNative(long ptr);
     private native void releaseNative(long ptr);
 
+    // What if the sdcard is not available ?
     private static String getDefaultFile() {
         File file = new File(Environment.getExternalStorageDirectory(), ".PLockDefault");
         return file.getAbsolutePath();
