@@ -59,7 +59,7 @@ try {
     // to do something...
 } catch (Exception e) {
     // errors
-} final {
+} finally {
     pLock.unlock(); 
 }
 
@@ -69,7 +69,7 @@ if(pLock.tryLock()) {
        // to do something...
    } catch (Exception e) {
        // errors
-   } final {
+   } finally {
        pLock.unlock(); 
    }
 } 
