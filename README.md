@@ -4,7 +4,7 @@ PLock is a simple and efficient cross-process lock, also supports read-write loc
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE)
 [![](https://jitpack.io/v/pqpo/PLock.svg)](https://jitpack.io/#pqpo/PLock)
 
-**If you like this, welcome to start/fork it or follow me.**
+**If you like this, welcome to star/fork it or follow me.**
 
 PLock is an Android library, it makes Android to support cross-process lock, not only that, it can also be transfer to support Java project.   
 It is easy to use and runs efficiently.   
