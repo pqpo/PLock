@@ -1,3 +1,7 @@
++<h1 align=center>
++<img src="Logo/Logo/512 horizontal.png" width=50%>
++</h1>
+
 # PLock
 PLock is a simple and efficient cross-process lock, also supports read-write lock.
 
